@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Features | CalenSmart</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+      </head>
+      <body>
+        <header>
+          <nav class="navbar">
+            <a class="logo" href="#">CalenSmart<span>.</span></a>
+            <ul class="menu-links">
+              <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="feature.html">Our Features</a></li>
+              <li><a href="testimonial.html">Testimonials</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+          </nav>
+        </header>
+        <script>
+          const header = document.querySelector("header");
+          const hamburgerBtn = document.querySelector("#hamburger-btn");
+          const closeMenuBtn = document.querySelector("#close-menu-btn");
+    
+
+          hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+    
+        
+          closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+        </script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Features Section</title>
+
+ 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+
+    <link rel="stylesheet" href="featurestyle.css" />
+  </head>
+  <body>
+    <section>
+      <div class="row">
+        <h1>Our Features</h1>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <h3>User Friendly</h3>
+            <p>
+                CalenSmart is designed with user-friendliness in mind. 
+                Its interface is clean, uncluttered, and easy to navigate, 
+                allowing you to quickly add, modify, or cancel appointments.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <h3>Super Secure</h3>
+            <p>
+                CalenSmart offers top-notch security for your personal data. 
+                It uses advanced encryption to protect your schedule and personal 
+                information, ensuring privacy and safety. Along with regular security 
+                updates, providing a reliable and secure way to manage your appointments.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Stay Connected</h3>
+            <p>
+                Share your calendar with friends, family, or colleagues. 
+                Stay in sync and never miss out on important dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
